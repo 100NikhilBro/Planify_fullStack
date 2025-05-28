@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4567;
 
 const cors = require('cors');
 app.use(cors({
-    origin: "https://fanciful-basbousa-7c8cca.netlify.app",
+    origin: ["https://fanciful-basbousa-7c8cca.netlify.app", "http://localhost:5174"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
 }))
