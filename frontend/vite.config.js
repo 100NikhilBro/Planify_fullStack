@@ -32,12 +32,15 @@ export default defineConfig(() => {
     console.log()
 
     return {
-        // server: {
-        //     proxy: {
-        //         '/task': "http://localhost:7892",
-        //         '/user': "http://localhost:7892",
-        //     }
-        // },
+        server: {
+            // proxy: {
+            //     '/task': "http://localhost:7892",
+            //     '/user': "http://localhost:7892",
+            // }
+        },
+
+
+
         proxy: {
             '/task': {
                 target: 'https://planify-full-stack.vercel.app',
