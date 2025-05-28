@@ -37,20 +37,21 @@ export default defineConfig(() => {
             //     '/task': "http://localhost:7892",
             //     '/user': "http://localhost:7892",
             // }
-        },
 
 
 
-        proxy: {
-            '/task': {
-                target: 'https://planify-full-stack.vercel.app',
-                changeOrigin: true,
-                secure: true,
-            },
-            '/user': {
-                target: 'https://planify-full-stack.vercel.app',
-                changeOrigin: true,
-                secure: true,
+
+            proxy: {
+                '/task': {
+                    target: 'https://planify-full-stack.vercel.app',
+                    changeOrigin: true,
+                    secure: true,
+                },
+                '/user': {
+                    target: 'https://planify-full-stack.vercel.app',
+                    changeOrigin: true,
+                    secure: true,
+                },
             },
         },
 
