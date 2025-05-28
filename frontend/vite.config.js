@@ -1,20 +1,20 @@
-// import { defineConfig, loadEnv } from 'vite';
-// import react from '@vitejs/plugin-react';
-// import tailwindcss from '@tailwindcss/vite';
+import { defineConfig, loadEnv } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
-// export default defineConfig(({ mode }) => {
-//     const env = loadEnv(mode, process.cwd()); // load .env variables
+export default defineConfig(({ mode }) => {
+    const env = loadEnv(mode, process.cwd()); // load .env variables
 
-//     return {
-//         server: {
-//             proxy: {
-//                 '/task': env.VITE_API_URL,
-//                 '/user': env.VITE_API_URL,
-//             }
-//         },
-//         plugins: [react(), tailwindcss()],
-//     };
-// });
+    return {
+        server: {
+            proxy: {
+                '/task': env.VITE_API_URL,
+                '/user': env.VITE_API_URL,
+            }
+        },
+        plugins: [react(), tailwindcss()],
+    };
+});
 
 
 
@@ -44,23 +44,23 @@
 
 
 
-// vite.config.js
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import fs from 'fs';
-import dotenv from 'dotenv';
+// // vite.config.js
+// import { defineConfig } from 'vite';
+// import react from '@vitejs/plugin-react';
+// import fs from 'fs';
+// import dotenv from 'dotenv';
 
-export default defineConfig(() => {
-    // Load custom .env file manually
-    const env = dotenv.parse(fs.readFileSync('.sample.env'));
+// export default defineConfig(() => {
+//     // Load custom .env file manually
+//     const env = dotenv.parse(fs.readFileSync('.sample.env'));
 
-    return {
-        server: {
-            proxy: {
-                '/task': env.VITE_API_URL,
-                '/user': env.VITE_API_URL,
-            },
-        },
-        plugins: [react()],
-    };
-});
+//     return {
+//         server: {
+//             proxy: {
+//                 '/task': env.VITE_API_URL,
+//                 '/user': env.VITE_API_URL,
+//             },
+//         },
+//         plugins: [react()],
+//     };
+// });
