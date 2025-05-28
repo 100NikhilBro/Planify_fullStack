@@ -1,7 +1,7 @@
 # Planify - Full Stack Task Management App
 
 **Description:**  
-Planify ek simple aur effective task management app hai jisme aap apne tasks create, update, delete, aur track kar sakte ho. Isme pagination aur light/dark mode ka feature bhi diya gaya hai for better user experience.
+Planify ek simple aur effective task management app hai jisme aap apne tasks create, update, delete, filter, aur track kar sakte ho. Isme pagination aur light/dark mode ka feature bhi diya gaya hai for better user experience.
 
 **Tech Stack:**  
 - React  
@@ -15,6 +15,7 @@ Planify ek simple aur effective task management app hai jisme aap apne tasks cre
 
 **Key Features:**  
 - Task CRUD operations (Create, Read, Update, Delete)  
+- Task filtering by status and priority  
 - User authentication & authorization  
 - Pagination for tasks  
 - Light and Dark mode toggle  
