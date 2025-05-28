@@ -1,14 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig, loadEnv } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
-// https://vite.dev/config/
-export default defineConfig({
-    server: {
-        proxy: {
-            '/task': "http://localhost:7892",
-            "/user": "http://localhost:7892"
-        }
-    },
-    plugins: [react(), tailwindcss()],
-})
+export default defineConfig(({ mode }) => {
+    const env = loadEnv(mode, process.cwd()); // load .env variables
+
+    return {
+        server: {
+            proxy: {
+                '/task': env.VITE_API_URL,
+                '/user': env.VITE_API_URL,
+            }
+        },
+        plugins: [react(), tailwindcss()],
+    };
+});
