@@ -14,9 +14,7 @@ Planify is a full-stack task management app that helps users manage their daily 
 
 ## 🖼️ Preview
 
-![App Screenshot](./screenshot.png)
+![App Screenshot]()
 
 ## 🌐 Live Links
-
-- **Frontend:** [https://planify-task.netlify.app](https://planify-task.netlify.app)
 - **Backend:** [https://planify-full-stack.vercel.app](https://planify-full-stack.vercel.app)
