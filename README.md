@@ -6,7 +6,7 @@ Planify is a full-stack task management app that helps users manage their daily 
 
 - ✅ User Authentication & Profile Update
 - 🗂️ Task Creation, Update, Delete
-- 🎯 Filter Tasks by Status (Pending, Completed)
+- 🎯 Filter Tasks by Status (Pending, Completed, Incomplete)
 - 📊 Pagination Support
 - 🌗 Light/Dark Mode Toggle
 - ⚡ Fast & Optimized with **TanStack Query (React Query)**
