@@ -14,7 +14,7 @@ Planify is a full-stack task management app that helps users manage their daily 
 
 ## 🖼️ Preview
 
-![App Screenshot]()
+![App Screenshot](053008.png)
 
 ## 🌐 Live Links
 - **Backend:** [https://planify-full-stack.vercel.app](https://planify-full-stack.vercel.app)
